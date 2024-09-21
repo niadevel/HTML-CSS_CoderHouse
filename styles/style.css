@@ -187,3 +187,51 @@
     font-size: 18px;
     font-family: "Poppins", sans-serif;
 }
+
+/* last section home */
+
+.store {
+    display: flex;
+    margin-left: 5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.store img{
+    height: 22px;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-list ul{
+    list-style: none;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+.tittle-list {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 250%;
+}
+
+.menu-items {
+    margin-top: 30px;
+    background-color:#00000019;
+    padding-bottom: 20px;
+}
+
+/* footer */
+
+footer {
+    padding: 15px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+}
