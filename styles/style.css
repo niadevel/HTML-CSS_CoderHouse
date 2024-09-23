@@ -35,6 +35,16 @@
     font-size: 15px;
 }
 
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar ul li a:hover {
+    color:#0071e3;
+}
+
+
 /* home video */
 
 .home-video video{
@@ -234,4 +244,52 @@ footer p{
     text-align: center;
     font-size: 12px;
     font-family: "Poppins", sans-serif;
+}
+
+/* accessories page */
+.accessoriesOne img {
+    height: 500px;
+}
+
+.accessoriesOne {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8em;
+}
+
+.accessoriesOne h1 {
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* section 2 accessories */
+
+.btn:hover {
+    color:gainsboro;
+}
+
+.input-text:focus{
+    box-shadow: 0px 0px 0px;
+    border-color:#8ecaf5;
+    outline: 0px;
+}
+
+.form-control {
+    border: 1px solid #8ecaf5;
+}
+
+/* Carusel accessories */
+
+.c-item {
+    height: 400px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: contain;
+}
+
+#carouselAccessories {
+    padding: 100px;
 }
