@@ -279,7 +279,7 @@ footer p{
     border: 1px solid #8ecaf5;
 }
 
-/* Carusel accessories */
+/* Carousel accessories */
 
 .c-item {
     height: 400px;
@@ -292,4 +292,11 @@ footer p{
 
 #carouselAccessories {
     padding: 100px;
+}
+
+/* Carousel Home */
+
+#carouselHome {
+    padding-top: 100px;
+    padding-bottom: 60px;
 }
