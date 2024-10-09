@@ -1,0 +1,60 @@
+div video {
+    width: 100%;
+}
+
+.container .home-iphone1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+        img {
+            width: 550px;
+            height: auto;
+            padding: 30px;
+        }
+}
+
+.container .home-iphone2 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: black;
+    color: white;
+    height: 90vh; 
+        h1 {
+            color: $titleH1w;
+            padding-bottom: 30px;
+        }
+        p {
+            color: $paragraphW
+        }
+        img {
+            width: 40%;
+            height: auto; 
+            padding-bottom: 50px;
+        }
+        div button .button-home-iphone2 {
+            padding: 45px 20px 20px 20px;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+}
+
+.container .boxes1 {
+    display: flex;
+    width: 49%;
+    background-color: black;
+    margin: 6px;
+    text-align: center;
+    padding-top: 20px;
+    div .box1 .box2 {
+        text-align: center;
+        padding-top: 12px;
+       
+
+    }
+        
+}

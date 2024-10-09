@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Page Clone</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./scss/styles.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <a href="http://127.0.0.1:3000/index.html">
-                    <img src="./assets/AppleLogo.svg" alt="Logo apple">
+        <nav class="navbar">
+            <div class="nav-icons">
+                <a href="index.html">
+                    <img src="./assets/navbar/apple-logo.png" alt="logo apple icon">
                 </a>
             </div>
             <ul>
@@ -22,62 +22,61 @@
                 <li><a href="pages/support.html">Support</a></li>
             </ul>
             <div class="nav-icons">
-                <img src="./assets/search-icon.png" alt="search icon">
+                <img src="./assets/navbar/search-icon.png" alt="search icon">
             </div>
-        </div>
+        </nav>
 
         <div class="home-video">
             <video autoplay loop muted play-inline>
-                <source src="./assets/y2mate.com - iPhone Xr Official Trailer_1080p(1).mp4" type="video/mp4" alt="video apple advertisement">
+                <source src="./assets/home/y2mate.com - iPhone Xr Official Trailer_1080p(1).mp4" type="video/mp4" alt="video apple advertisement">
             </video>
         </div>
 
+        <section class="container home-iphone1">
+                <img src="./assets/home/iphone6.png" alt="iPhones">  
+                <button type="button" class="shop-button">Shop</button>
+        </section>
         
-        <div class="home-iphone">
-            <img src="./assets/iphone6.png" alt="iPhones">
-        </div>
-        <div>
-            <button type="button" class="buy-button">Shop</button>
-        </div>
-        
-        <section class="home-iphone-2">
+        <section class="container home-iphone2">
             <h1>iPhone 16 Pro</h1>
             <p>Hello, Apple Intelligence.</p>
 
-            <img src="./assets/iphone2.jpg" alt="iPhone 2">
+            <img src="./assets/home/iphone2.jpg" alt="iPhone 2">
 
-            <div class="button">
+            <div class="button-home-iphone2">
                 <button class="learn-button" type="button">Learn</button>
                 <button class="shop-button" type="button">Shop</button>
             </div>
         </section>
 
-        <section class="boxes1">
-            <div class="box">
-                <h2>MacBook Air M1</h2>
-                <p>Designed to go places.</p>
-                <div class="button">
-                    <button class="learn-button" type="button">Learn</button>
-                    <button class="shop-button" type="button">Shop</button>
-                </div>
-
-                <img src="./assets/MacBook_Air1.jpeg" alt="MacBook Air M1">
+        <section class="container boxes1">
+            <div class="box1">
+                <article>
+                    <h2>MacBook Air M1</h2>
+                    <p>Designed to go places.</p>
+                    <div class="button">
+                        <button class="learn-button" type="button">Learn</button>
+                        <button class="shop-button" type="button">Shop</button>
+                    </div>
+                    <!-- <img src="./assets/home/MacBook_Air1.jpeg" alt="MacBook Air M1"> -->
+                </article>
             </div>
 
-            <div class="box">
-                <h2>Apple Watch</h2>
-                <p>All the esentials.</p>
-                <div class="button">
-                    <button class="learn-button" type="button">Learn</button>
-                    <button class="shop-button" type="button">Shop</button>
-                </div>
-
-                <img src="./assets/applewatch.png" alt="Apple Watch">
+            <div class="box2">
+                <article>
+                    <h2>Apple Watch</h2>
+                    <p>All the esentials.</p>
+                    <div class="button">
+                        <button class="learn-button" type="button">Learn</button>
+                        <button class="shop-button" type="button">Shop</button>
+                    </div>
+                    <!-- <img src="./assets/home/applewatch.png" alt="Apple Watch"> -->
+                </article>
             </div>
         </section>
 
-        <section class="boxes2">
-            <div class="box2">
+        <section class="container boxes2">
+            <div class="box3">
                 <h2>iPad</h2>
                 <p>Get to know iPad.</p>
                 <div class="button">
@@ -88,7 +87,7 @@
                 <img src="./assets/ipad1.png" alt="iPad">
             </div>
 
-            <div class="box3">
+            <div class="box4">
                 <h2>Airpods Pro</h2>
                 <p>Active Noise Cancellation.</p>
                 <div class="button">
@@ -134,18 +133,18 @@
 
         <section class="menu-items">
             <div class="store">
-                <img src="/assets/apple-logo.png" alt="apple logo">
+                <img src="/assets/navbar/apple-logo.png" alt="apple logo">
                 <p>Apple Online Store</p>
             </div>
             <div class="menu-list">
                 <ul>
-                    <li class="tittle-list">Contact Us</li>
+                    <li class="title-list">Contact Us</li>
                     <li>+54 11 1234 5678</li>
                     <li>apple@gmail.com</li>
                     <li>Find a Store</li>
                 </ul>
                 <ul>
-                    <li class="tittle-list">Services</li>
+                    <li class="title-list">Services</li>
                     <li>Contact Us</li>
                     <li>Ordering & Payment</li>
                     <li>Shipping</li>
@@ -154,7 +153,7 @@
                     <li>Sizing Guide</li>
                 </ul>
                 <ul>
-                    <li class="tittle-list">Information</li>
+                    <li class="title-list">Information</li>
                     <li>About Us</li>
                     <li>Work With Us</li>
                     <li>Privacy</li>
