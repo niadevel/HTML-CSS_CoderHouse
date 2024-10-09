@@ -43,18 +43,69 @@ div video {
         }
 }
 
-.container .boxes1 {
-    display: flex;
-    width: 49%;
-    background-color: black;
-    margin: 6px;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px 20px 20px 0px;
     text-align: center;
-    padding-top: 20px;
-    div .box1 .box2 {
-        text-align: center;
-        padding-top: 12px;
-       
+    background-color: black;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px 0px;
+    
+        .cardsHome1 {
+        h2 {
+            color: white;
+            padding: 8px;
+        }
+        p {
+            color: white;
+            padding: 10px;
+        }
+        .img1 {
+            width: 70%;
+            height: 70%;
+            object-fit: cover;
+        }
+        .img2 {
+            width: 60%;
+            height: 60%;
+            object-fit: cover;
+            ;
+        }
+     }
 
     }
-        
-}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px 20px 20px 0px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px 0px;
+    
+        .cardsHome2 {
+        h2 {
+            color: $titleH2;
+            padding: 8px;
+        }
+        p {
+            color: $paragraphB;
+            padding: 10px;
+        }
+        .img3 {
+            width: 60%;
+            height: 60%;
+            object-fit: cover;
+        }
+        .img4 {
+            width: 60%;
+            height: 60%;
+            object-fit: cover;
+            
+        }
+        }
+
+    }

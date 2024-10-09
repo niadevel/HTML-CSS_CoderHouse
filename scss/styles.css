@@ -51,23 +51,23 @@ nav ul li a:hover {
 .shop-button {
   background-color: #0071e3;
   border: none;
-  border-radius: 20px;
+  border-radius: 15px;
   color: white;
-  padding: 15px 30px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .learn-button {
   background-color: transparent;
   border-color: #0071e3;
-  border-radius: 20px;
+  border-radius: 15px;
   color: #0071e3;
-  padding: 15px 30px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .store {
@@ -152,15 +152,63 @@ div video {
   justify-content: space-evenly;
 }
 
-.container .boxes1 {
-  display: flex;
-  width: 49%;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 20px 20px 20px 0px;
+  text-align: center;
   background-color: black;
-  margin: 6px;
-  text-align: center;
-  padding-top: 20px;
+  justify-content: center;
+  flex-direction: row;
+  margin: 10px 0px;
 }
-.container .boxes1 div .box1 .box2 {
+.grid-container .cardsHome1 h2 {
+  color: white;
+  padding: 8px;
+}
+.grid-container .cardsHome1 p {
+  color: white;
+  padding: 10px;
+}
+.grid-container .cardsHome1 .img1 {
+  width: 70%;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid-container .cardsHome1 .img2 {
+  width: 60%;
+  height: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 20px 20px 20px 0px;
   text-align: center;
-  padding-top: 12px;
+  justify-content: center;
+  flex-direction: row;
+  margin: 10px 0px;
+}
+.grid-container2 .cardsHome2 h2 {
+  color: black;
+  padding: 8px;
+}
+.grid-container2 .cardsHome2 p {
+  color: black;
+  padding: 10px;
+}
+.grid-container2 .cardsHome2 .img3 {
+  width: 60%;
+  height: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid-container2 .cardsHome2 .img4 {
+  width: 60%;
+  height: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=styles.css.map */
