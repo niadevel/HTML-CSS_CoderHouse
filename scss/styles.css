@@ -221,4 +221,21 @@ div video {
 .grid-container2 .cardsHome3 p {
   color: black;
   padding: 10px;
+}
+
+.section1Mac {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8em;
+}
+
+.section2Mac video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  width: calc(100% + 2px);
+  top: 50%;
+  width: 100%;
+  height: 800px;
 }/*# sourceMappingURL=styles.css.map */
