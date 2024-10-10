@@ -161,6 +161,8 @@ div video {
   justify-content: center;
   flex-direction: row;
   margin: 10px 0px;
+  width: 1fr;
+  height: 75vh;
 }
 .grid-container .cardsHome1 h2 {
   color: white;
@@ -191,6 +193,13 @@ div video {
   justify-content: center;
   flex-direction: row;
   margin: 10px 0px;
+  width: 1fr;
+  height: 75vh;
+}
+.grid-container2 .cardsHome2 {
+  background-image: url(/assets/home/ipadHome.png);
+  background-size: cover;
+  background-position: center;
 }
 .grid-container2 .cardsHome2 h2 {
   color: black;
@@ -200,15 +209,16 @@ div video {
   color: black;
   padding: 10px;
 }
-.grid-container2 .cardsHome2 .img3 {
-  width: 60%;
-  height: 60%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.grid-container2 .cardsHome3 {
+  background-image: url(/assets/home/airpodshome.png);
+  background-size: cover;
+  background-position: center;
 }
-.grid-container2 .cardsHome2 .img4 {
-  width: 60%;
-  height: 60%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.grid-container2 .cardsHome3 h2 {
+  color: black;
+  padding: 8px;
+}
+.grid-container2 .cardsHome3 p {
+  color: black;
+  padding: 10px;
 }/*# sourceMappingURL=styles.css.map */
