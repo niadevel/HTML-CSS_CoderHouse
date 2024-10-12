@@ -37,3 +37,171 @@ video {
     animation-fill-mode: both;
 }
 
+h2 {
+    padding: 50px;
+}
+
+.section3Mac {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: mandatory;
+    scrollbar-width: none;
+    justify-content: center;
+ 
+     .carouselMac::-webkit-scrollbar {
+         display: none;
+    }
+    
+    .card1 {
+        background-image: url(/assets/mac/imgMac1.jpeg);
+        background-size: cover;
+        background-position: center;
+        scroll-snap-align: start;
+        border-radius: 30px;
+        height: 600px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        
+        p {
+            color: $paragraphW;
+            padding: 20px 10px 10px 0px;
+            text-emphasis: 25%;
+        }
+         
+    }
+    .card2 {
+        background-image: url(/assets/mac/imgMac2.jpeg);
+        background-size: cover;
+        background-position: center;
+        scroll-snap-align: start;
+        border-radius: 30px;
+        height: 600px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        p {
+            color: $paragraphW;
+            padding: 20px 10px 10px 0px;
+            text-emphasis: 25%;
+        }
+        
+        
+    }
+    .card3 {
+        background-image: url(/assets/mac/imgMac3.jpeg);
+        background-size: cover;
+        background-position: center;
+        scroll-snap-align: start;
+        border-radius: 30px;
+        height: 600px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        p {
+            padding: 20px 10px 0px 0px;
+            text-emphasis: 25%;
+        }
+        
+    }
+    .card4 {
+        background-image: url(/assets/mac/imgMac4.jpeg);
+        background-size: cover;
+        background-position: center;
+        scroll-snap-align: start;
+        border-radius: 30px;
+        height: 600px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        p {
+            padding: 20px 10px 10px 0px;
+            text-emphasis: 25%; 
+        }
+        
+    }
+    .card5 {
+        background-image: url(/assets/mac/imgMac5.jpeg);
+        background-size: cover;
+        background-position: center;
+        scroll-snap-align: start;
+        border-radius: 30px;
+        height: 600px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        p {
+            color: $paragraphW;
+            padding: 20px 10px 10px 0px;
+            text-emphasis: 25%;
+        }
+    
+    }
+}
+
+.section4Mac {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 100px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px 0px;
+    width: 1fr;
+    height: 75vh;
+    align-items: center;
+    
+    h2 {
+        padding: 20px;
+    }
+    p {
+        padding: 20px;
+    }
+    .choose2 {
+        img {
+            width: 75%;
+            height: auto;
+        }
+    }  
+}
+
+
+.section5Mac {
+    display:flex;
+    flex-direction: row;
+    margin-left: 20px;
+    align-content: center;
+
+    div {
+        height: 50vh;
+        width: .2fr;
+        justify-content:space-evenly;
+        h3 {
+            padding: 20px;
+        }
+        #mac1{
+            width: 75%;
+            height: auto;
+            padding-bottom: 20px;
+        }
+        #mac2 {
+            width: 50%;
+            height: auto;
+            padding-bottom: 20px;
+        }
+        #mac3 {
+            width: 57%;
+            height: auto;
+            padding-bottom: 20px;
+        }
+        p{
+            padding-bottom: 20px;
+        }
+
+    }
+}

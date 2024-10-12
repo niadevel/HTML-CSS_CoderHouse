@@ -14,6 +14,11 @@ body h2 {
   font-size: 40px;
 }
 
+body h3 {
+  color: black;
+  font-size: 30px;
+}
+
 body p {
   color: black;
   font-size: 18px;
@@ -258,4 +263,163 @@ video {
   animation-name: show;
   animation-range: entry 45% cover 50%;
   animation-fill-mode: both;
+}
+
+h2 {
+  padding: 50px;
+}
+
+.section3Mac {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  scroll-behavior: auto;
+  gap: 1.2rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: mandatory;
+  scrollbar-width: none;
+  justify-content: center;
+}
+.section3Mac .carouselMac::-webkit-scrollbar {
+  display: none;
+}
+.section3Mac .card1 {
+  background-image: url(/assets/mac/imgMac1.jpeg);
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: start;
+  border-radius: 30px;
+  height: 600px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+.section3Mac .card1 p {
+  color: white;
+  padding: 20px 10px 10px 0px;
+  -webkit-text-emphasis: 25%;
+          text-emphasis: 25%;
+}
+.section3Mac .card2 {
+  background-image: url(/assets/mac/imgMac2.jpeg);
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: start;
+  border-radius: 30px;
+  height: 600px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+.section3Mac .card2 p {
+  color: white;
+  padding: 20px 10px 10px 0px;
+  -webkit-text-emphasis: 25%;
+          text-emphasis: 25%;
+}
+.section3Mac .card3 {
+  background-image: url(/assets/mac/imgMac3.jpeg);
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: start;
+  border-radius: 30px;
+  height: 600px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+.section3Mac .card3 p {
+  padding: 20px 10px 0px 0px;
+  -webkit-text-emphasis: 25%;
+          text-emphasis: 25%;
+}
+.section3Mac .card4 {
+  background-image: url(/assets/mac/imgMac4.jpeg);
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: start;
+  border-radius: 30px;
+  height: 600px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+.section3Mac .card4 p {
+  padding: 20px 10px 10px 0px;
+  -webkit-text-emphasis: 25%;
+          text-emphasis: 25%;
+}
+.section3Mac .card5 {
+  background-image: url(/assets/mac/imgMac5.jpeg);
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: start;
+  border-radius: 30px;
+  height: 600px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+.section3Mac .card5 p {
+  color: white;
+  padding: 20px 10px 10px 0px;
+  -webkit-text-emphasis: 25%;
+          text-emphasis: 25%;
+}
+
+.section4Mac {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 100px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 10px 0px;
+  width: 1fr;
+  height: 75vh;
+  align-items: center;
+}
+.section4Mac h2 {
+  padding: 20px;
+}
+.section4Mac p {
+  padding: 20px;
+}
+.section4Mac .choose2 img {
+  width: 75%;
+  height: auto;
+}
+
+.section5Mac {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  align-content: center;
+}
+.section5Mac div {
+  height: 50vh;
+  width: 0.2fr;
+  justify-content: space-evenly;
+}
+.section5Mac div h3 {
+  padding: 20px;
+}
+.section5Mac div #mac1 {
+  width: 75%;
+  height: auto;
+  padding-bottom: 20px;
+}
+.section5Mac div #mac2 {
+  width: 50%;
+  height: auto;
+  padding-bottom: 20px;
+}
+.section5Mac div #mac3 {
+  width: 57%;
+  height: auto;
+  padding-bottom: 20px;
+}
+.section5Mac div p {
+  padding-bottom: 20px;
 }/*# sourceMappingURL=styles.css.map */
