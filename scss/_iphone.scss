@@ -36,3 +36,130 @@ video {
     animation-range: entry 45% cover 50%;
     animation-fill-mode: both;
 }
+
+.section3iPhone {
+    margin-top: 30px;
+    text-align: center;
+    .cards {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        .card {
+            height: 470px;
+            width: 400px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            transition: 0.7s;
+            :hover {
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+            img {
+                height: 250px;
+            }
+            h3 {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            p {
+                margin-bottom: 20px;
+            }
+            
+        }
+    }
+}
+
+.section4iPhone {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;   
+    height: 500px;
+    .card1a {
+        height:150px;
+        width: 80px;
+        text-align: center;
+        padding: 25px;
+        img {
+            height: 50px;
+        }
+        p {
+            padding-top: 10px;
+            font-size: 14px;
+        }
+    }
+    .card2a {
+        height:150px;
+        width: 80px;
+        text-align: center;
+        padding: 25px;
+        img {
+            height: 50px;
+        }
+        p {
+            padding-top: 10px;
+            font-size: 14px;
+        }
+    }
+    .card3a {
+        height:150px;
+        width: 80px;
+        text-align: center;
+        padding: 25px;
+        img {
+            height: 50px;
+        }
+        p {
+            padding-top: 10px;
+            font-size: 14px;
+        }
+    }
+}
+
+.section5iPhone {
+    margin-top: 30px;
+    margin-top: 30px;
+    text-align: center;
+   .cards5 {
+        
+        display: flex;
+        justify-content: space-evenly;
+        .card5 {
+            height: 700px;
+            width: 48%;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: rgba(202, 202, 215, 0.2) 0px 7px 29px 0px;
+            // background-color: rgb(242, 242, 242, 0.557);
+            h4 {
+                padding: 20px;
+            }
+            img {
+                padding-top: 20px;
+                height: 550px;
+              
+            }
+            
+        }
+        .card6{
+            height: 700px;
+            width: 48%;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: rgba(202, 202, 215, 0.2) 0px 7px 29px 0px;
+            // background-color: rgba(242, 242, 242, 0.557);
+            h4 {
+                padding: 20px;
+            }
+            img {
+                padding-top: 20px;
+                height: 500px;
+            
+            }
+        }
+    } 
+}

@@ -19,6 +19,11 @@ body h3 {
   font-size: 30px;
 }
 
+body h4 {
+  color: black;
+  font-size: 25px;
+}
+
 body p {
   color: black;
   font-size: 18px;
@@ -460,4 +465,124 @@ video {
   animation-name: show;
   animation-range: entry 45% cover 50%;
   animation-fill-mode: both;
+}
+
+.section3iPhone {
+  margin-top: 30px;
+  text-align: center;
+}
+.section3iPhone .cards {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.section3iPhone .cards .card {
+  height: 470px;
+  width: 400px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.7s;
+}
+.section3iPhone .cards .card :hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.section3iPhone .cards .card img {
+  height: 250px;
+}
+.section3iPhone .cards .card h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.section3iPhone .cards .card p {
+  margin-bottom: 20px;
+}
+
+.section4iPhone {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  height: 500px;
+}
+.section4iPhone .card1a {
+  height: 150px;
+  width: 80px;
+  text-align: center;
+  padding: 25px;
+}
+.section4iPhone .card1a img {
+  height: 50px;
+}
+.section4iPhone .card1a p {
+  padding-top: 10px;
+  font-size: 14px;
+}
+.section4iPhone .card2a {
+  height: 150px;
+  width: 80px;
+  text-align: center;
+  padding: 25px;
+}
+.section4iPhone .card2a img {
+  height: 50px;
+}
+.section4iPhone .card2a p {
+  padding-top: 10px;
+  font-size: 14px;
+}
+.section4iPhone .card3a {
+  height: 150px;
+  width: 80px;
+  text-align: center;
+  padding: 25px;
+}
+.section4iPhone .card3a img {
+  height: 50px;
+}
+.section4iPhone .card3a p {
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.section5iPhone {
+  margin-top: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+.section5iPhone .cards5 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section5iPhone .cards5 .card5 {
+  height: 700px;
+  width: 48%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(202, 202, 215, 0.2) 0px 7px 29px 0px;
+}
+.section5iPhone .cards5 .card5 h4 {
+  padding: 20px;
+}
+.section5iPhone .cards5 .card5 img {
+  padding-top: 20px;
+  height: 550px;
+}
+.section5iPhone .cards5 .card6 {
+  height: 700px;
+  width: 48%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(202, 202, 215, 0.2) 0px 7px 29px 0px;
+}
+.section5iPhone .cards5 .card6 h4 {
+  padding: 20px;
+}
+.section5iPhone .cards5 .card6 img {
+  padding-top: 20px;
+  height: 500px;
 }/*# sourceMappingURL=styles.css.map */
