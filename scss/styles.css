@@ -585,4 +585,66 @@ video {
 .section5iPhone .cards5 .card6 img {
   padding-top: 20px;
   height: 500px;
+}
+
+.section1accessories {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8em;
+}
+.section1accessories h1 {
+  color: black;
+}
+.section1accessories img {
+  height: 500px;
+}
+
+.section2accessories {
+  margin: 20px;
+  justify-content: center;
+  padding: 50px;
+}
+.section2accessories .input-text:focus {
+  box-shadow: 0px 0px 0px;
+  border-color: #8ecaf5;
+  outline: 0px;
+}
+.section2accessories .form-control {
+  border: 1px solid #8ecaf5;
+}
+.section2accessories .btn:hover {
+  color: gainsboro;
+}
+
+.section3accessories {
+  padding: 100px;
+}
+.section3accessories .c-item {
+  height: 500px;
+  margin-bottom: 30px;
+}
+.section3accessories .c-img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.section1Support img {
+  display: flex;
+  width: 100%;
+}
+
+.section2Support {
+  margin-top: 30px;
+  text-align: center;
+}
+.section2Support .cardsSupport {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.section2Support .cardsSupport p {
+  padding-top: 20px;
 }/*# sourceMappingURL=styles.css.map */

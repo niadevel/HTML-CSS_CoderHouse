@@ -1,0 +1,44 @@
+
+
+.section1accessories {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8em;
+    h1{
+        color: $titleH1b;
+    }
+    img {
+        height: 500px;
+    }
+}
+
+.section2accessories {
+    margin: 20px;
+    justify-content: center;
+    padding: 50px;
+    .input-text:focus{
+        box-shadow: 0px 0px 0px;
+        border-color:#8ecaf5;
+        outline: 0px;
+    }
+    .form-control {
+        border: 1px solid #8ecaf5;
+    }
+    .btn:hover {
+        color:gainsboro;
+    }
+}
+
+.section3accessories {
+    padding: 100px;
+    .c-item {
+        height: 500px;
+        margin-bottom: 30px;
+    }
+    
+    .c-img {
+        height: 100%;
+        object-fit: contain;
+    }
+}

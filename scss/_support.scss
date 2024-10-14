@@ -1,0 +1,20 @@
+.section1Support {
+    img {
+        display: flex;
+        width: 100%;
+    }
+}
+
+.section2Support {
+    margin-top: 30px;
+    text-align: center;
+    .cardsSupport {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+        p {
+            padding-top: 20px;
+        }
+    }
+}
