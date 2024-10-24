@@ -5,26 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mac apple page practice">
     <title>Apple Page Clone Mac</title>
+    <!--AOS -librería-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../scss/styles.css">
 </head>
 
 <body>
+    <header>
         <nav class="navbar">
-            <div class="nav-icons">
-                <a href="../index.html">
-                    <img src="../assets/navbar/apple-logo.png" alt="logo apple icon">
-                </a>
-            </div>
             <ul>
+                <li>
+                    <a href="../index.html">
+                    <img src="../assets/navbar/apple-logo.png" alt="logo apple icon" class="logo">
+                    </a>
+                </li>
+                <li><a href="">Mac</a></li>
+                <li><a href="iphone.html">iPhone</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li>
+                    <img src="../assets/navbar/search-icon.png" alt="search icon">
+                </li>
+            </ul>
+        </nav> 
+
+        <div class="menuicon">
+            <img src="../assets/navbar/menu.png" alt="menu icono">
+        </div>
+        <div class="xicon">
+            <img src="../assets/navbar/x.png" alt="menu abierto">
+        </div>
+        <div class="logoresponsive">
+            <img src="../assets/navbar/apple-logo.png" alt="logo apple">
+        </div>
+
+        <section class="dropdown_menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="mac.html">Mac</a></li>
+                <li><a href="iphone.html">iPhone</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </section>
+    </header>
+
+
+        <!-- <nav class="navbar">
+            <a href="../index.html" class="logoApple">
+                <img src="../assets/navbar/apple-logo.png" alt="logo apple icon">
+            </a>
+            <ul>   
                 <li><a href="">Mac</a></li>
                 <li><a href="iphone.html">iPhone</a></li>
                 <li><a href="accessories.html">Accessories</a></li>
                 <li><a href="support.html">Support</a></li>
             </ul>
-            <div class="nav-icons">
-                <img src="../assets/navbar/search-icon.png" alt="search icon">
+            <div class="icons">
+                <img src="../assets/navbar/menu.png" alt="menu icon">
             </div>
-        </nav>    
+        </nav> -->
 
     <main>
         <section class="section1Mac">
@@ -65,23 +105,25 @@
         </section>
 
         <section class="section4Mac">
-            <div class="choose1">
+            <div class="choose1" data-aos="fade-up">
                 <h2>Help me choose.</h2>
                 <p>Answer a few questions to find <br> the best Mac for you.</p>
                 <button class="shop-button">Shop</button>
             </div>
-            <div class="choose2">
+            <div class="choose2" data-aos="fade-up">
                 <img src="../assets/mac/mac4.png" alt="Choose a Mac"/>
             </div>
         </section>
 
-        <h2>Explore the line up.</h2>
+        
 
         <section class="section5Mac">
+            <h2>Explore the line up.</h2>
+            <div class="container5">
             <div>
                 <h3>Laptops</h3>
                 <br>
-                <img id="mac1" src="../assets/mac/MacPage.png" alt="MacBook Air"/>
+                <img id="mac1" src="../assets/mac/laptopsMacPage.png" alt="MacBook Air"/>
                 <br>
                 <p>Strikingly thin and fast so you can work, play, or create anywhere.</p>
                 <button class="learn-button">Learn</button>
@@ -106,6 +148,7 @@
                 <p>A 5K Retina display with stellar camera and audio.</p>
                 <button class="learn-button">Learn</button>
                 <button class="shop-button">Shop</button>
+            </div>
             </div>
         </section>
     </main>  
@@ -146,6 +189,25 @@
     <footer>
         <p>Copyright 2024 Apple Practice. Estef A.</p>
     </footer>
-        
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>   
+    <script>
+        AOS.init();
+    </script>
+    <!-- <script>
+        const toggleBtn = document.querySelector('.menuicon')
+        const toggleBtnIcon = document.querySelector('.menuicon i')
+        const dropDownMenu = document.querySelector ('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'xicon'
+            : 'xicon'
+
+        }
+    </script> -->
+    
 </body>
 </html>

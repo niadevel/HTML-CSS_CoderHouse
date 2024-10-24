@@ -29,32 +29,71 @@ body p {
   font-size: 18px;
 }
 
-nav {
+header nav {
   display: flex;
-  justify-content: center;
-  padding-top: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 15px;
   padding-bottom: 8px;
 }
-nav div .logo a img {
-  height: 20px;
-}
-nav div img {
-  height: 20px;
-  margin-left: 30px;
-}
-nav ul {
+header nav ul {
   display: flex;
   list-style: none;
 }
-nav ul li {
+header nav ul li {
   margin-left: 50px;
   font-size: 15px;
 }
-nav ul li a {
+header nav ul li a {
   text-decoration: none;
   color: black;
 }
-nav ul li a:hover {
+header nav ul li a:hover {
+  color: #0071e3;
+}
+header nav ul li a img {
+  height: 20px;
+}
+header nav ul li img {
+  height: 20px;
+  cursor: pointer;
+}
+header .menuicon {
+  display: none;
+}
+header .menuicon img {
+  height: 20px;
+  cursor: pointer;
+}
+header .xicon {
+  display: none;
+}
+header .xicon img {
+  height: 20px;
+}
+header .logoresponsive {
+  display: none;
+}
+header .logoresponsive img {
+  height: 20px;
+}
+header .dropdown_menu {
+  display: none;
+  padding-top: 5px;
+}
+header .dropdown_menu ul {
+  flex-direction: column;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .dropdown_menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+header .dropdown_menu ul li a:hover {
   color: #0071e3;
 }
 
@@ -67,6 +106,12 @@ nav ul li a:hover {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
+  margin: 6px;
+  transition-duration: 0.4s;
+}
+
+.shop-button:hover {
+  background-color: #2e9620;
 }
 
 .learn-button {
@@ -78,6 +123,12 @@ nav ul li a:hover {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
+  margin: 6px;
+  transition-duration: 0.4s;
+}
+
+.learn-button:hover {
+  background-color: #fcfdff;
 }
 
 .store {
@@ -117,24 +168,80 @@ footer p {
   font-size: 12px;
 }
 
-div video {
+@media screen and (max-width: 834px) {
+  .navbar {
+    display: none;
+  }
+  header .menuicon {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  header .dropdown_menu {
+    display: block;
+    position: relative;
+    top: 20px;
+    right: 40px;
+    left: 40px;
+  }
+  header .logoresponsive {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+  .menu-items .menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .menu-items .menu-list ul {
+    text-align: center;
+  }
+  .shop-button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  .learn-button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav ul {
+  margin: auto;
+  padding: auto;
+}
+nav ul li {
+  justify-content: center;
+}
+
+section video {
   width: 100%;
 }
 
-.container .home-iphone1 {
+.container-fluid .home-iphone1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 60px;
 }
-.container .home-iphone1 img {
+.container-fluid .home-iphone1 img {
   width: 550px;
   height: auto;
   padding: 30px;
 }
 
-.container .home-iphone2 {
+.container-fluid .home-iphone2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -144,53 +251,56 @@ div video {
   color: white;
   height: 90vh;
 }
-.container .home-iphone2 h1 {
+.container-fluid .home-iphone2 h1 {
   color: white;
   padding-bottom: 30px;
 }
-.container .home-iphone2 p {
+.container-fluid .home-iphone2 p {
   color: white;
 }
-.container .home-iphone2 img {
+.container-fluid .home-iphone2 img {
   width: 40%;
   height: auto;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
-.container .home-iphone2 div button .button-home-iphone2 {
+.container-fluid .home-iphone2 .button-home-iphone2 {
   padding: 45px 20px 20px 20px;
   flex-direction: row;
-  justify-content: space-evenly;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 20px 20px 20px 0px;
+  padding: 10px 10px 10px 0px;
   text-align: center;
-  background-color: black;
   justify-content: center;
   flex-direction: row;
   margin: 10px 0px;
   width: 1fr;
-  height: 75vh;
+  height: 70vh;
+  gap: 10px;
+}
+.grid-container .cardsHome1 {
+  background-color: black;
 }
 .grid-container .cardsHome1 h2 {
+  margin-top: 10px;
   color: white;
-  padding: 8px;
+  padding: 0px;
 }
 .grid-container .cardsHome1 p {
   color: white;
-  padding: 10px;
+  padding: 5px;
 }
 .grid-container .cardsHome1 .img1 {
-  width: 70%;
-  height: 70%;
+  width: 60%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .grid-container .cardsHome1 .img2 {
   width: 60%;
-  height: 60%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -198,13 +308,14 @@ div video {
 .grid-container2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 20px 20px 20px 0px;
+  padding: 10px 10px 10px 0px;
   text-align: center;
   justify-content: center;
   flex-direction: row;
-  margin: 10px 0px;
+  margin-bottom: 10px;
   width: 1fr;
-  height: 75vh;
+  height: 70vh;
+  gap: 10px;
 }
 .grid-container2 .cardsHome2 {
   background-image: url(/assets/home/ipadHome.png);
@@ -212,8 +323,9 @@ div video {
   background-position: center;
 }
 .grid-container2 .cardsHome2 h2 {
+  margin-top: 10px;
   color: black;
-  padding: 8px;
+  padding: 0px;
 }
 .grid-container2 .cardsHome2 p {
   color: black;
@@ -225,14 +337,45 @@ div video {
   background-position: center;
 }
 .grid-container2 .cardsHome3 h2 {
+  margin-top: 10px;
   color: black;
-  padding: 8px;
+  padding: 0px;
 }
 .grid-container2 .cardsHome3 p {
   color: black;
   padding: 10px;
 }
 
+.c-item {
+  height: auto;
+}
+
+.c-img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 834px) {
+  section video {
+    margin-top: 10%;
+  }
+  .home-iphone2 {
+    text-align: center;
+  }
+  .home-iphone2 h1 {
+    font-size: 50px;
+    padding: 5px;
+  }
+  .home-iphone2 img {
+    width: 500px;
+    padding-bottom: 10px;
+  }
+  .grid-container {
+    flex-direction: column;
+  }
+}
 .section1Mac {
   display: flex;
   justify-content: space-between;
@@ -275,9 +418,11 @@ h2 {
 }
 
 .section3Mac {
+  height: 75vh;
   width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   scroll-behavior: auto;
   gap: 1.2rem;
   overflow-y: auto;
@@ -285,6 +430,11 @@ h2 {
   scroll-snap-type: mandatory;
   scrollbar-width: none;
   justify-content: center;
+  text-align: center;
+}
+.section3Mac :hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 .section3Mac .carouselMac::-webkit-scrollbar {
   display: none;
@@ -302,9 +452,9 @@ h2 {
 }
 .section3Mac .card1 p {
   color: white;
-  padding: 20px 10px 10px 0px;
-  -webkit-text-emphasis: 25%;
-          text-emphasis: 25%;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
 }
 .section3Mac .card2 {
   background-image: url(/assets/mac/imgMac2.jpeg);
@@ -319,9 +469,9 @@ h2 {
 }
 .section3Mac .card2 p {
   color: white;
-  padding: 20px 10px 10px 0px;
-  -webkit-text-emphasis: 25%;
-          text-emphasis: 25%;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
 }
 .section3Mac .card3 {
   background-image: url(/assets/mac/imgMac3.jpeg);
@@ -335,9 +485,9 @@ h2 {
   justify-content: center;
 }
 .section3Mac .card3 p {
-  padding: 20px 10px 0px 0px;
-  -webkit-text-emphasis: 25%;
-          text-emphasis: 25%;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
 }
 .section3Mac .card4 {
   background-image: url(/assets/mac/imgMac4.jpeg);
@@ -351,9 +501,9 @@ h2 {
   justify-content: center;
 }
 .section3Mac .card4 p {
-  padding: 20px 10px 10px 0px;
-  -webkit-text-emphasis: 25%;
-          text-emphasis: 25%;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
 }
 .section3Mac .card5 {
   background-image: url(/assets/mac/imgMac5.jpeg);
@@ -368,9 +518,9 @@ h2 {
 }
 .section3Mac .card5 p {
   color: white;
-  padding: 20px 10px 10px 0px;
-  -webkit-text-emphasis: 25%;
-          text-emphasis: 25%;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .section4Mac {
@@ -384,7 +534,7 @@ h2 {
   width: 1fr;
   height: 75vh;
   align-items: center;
-  background-color: rgba(237, 236, 236, 0.3);
+  background-color: rgba(242, 241, 241, 0.6352941176);
 }
 .section4Mac h2 {
   padding: 20px;
@@ -398,38 +548,139 @@ h2 {
 }
 
 .section5Mac {
-  display: flex;
-  flex-direction: row;
   margin-left: 20px;
   align-content: center;
+  text-align: center;
 }
-.section5Mac div {
+.section5Mac .container5 {
   height: 50vh;
   width: 0.2fr;
   justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
 }
-.section5Mac div h3 {
+.section5Mac .container5 h3 {
   padding: 20px;
 }
-.section5Mac div #mac1 {
+.section5Mac .container5 #mac1 {
   width: 75%;
   height: auto;
   padding-bottom: 20px;
 }
-.section5Mac div #mac2 {
+.section5Mac .container5 #mac2 {
   width: 50%;
   height: auto;
   padding-bottom: 20px;
 }
-.section5Mac div #mac3 {
+.section5Mac .container5 #mac3 {
   width: 57%;
   height: auto;
   padding-bottom: 20px;
 }
-.section5Mac div p {
+.section5Mac .container5 p {
   padding-bottom: 20px;
 }
 
+@media screen and (max-width: 834px) {
+  .section1Mac {
+    display: block;
+    height: 180px;
+    flex-direction: column;
+    padding: 4em;
+  }
+  .section1Mac h1 {
+    font-size: 50px;
+  }
+  .section2Mac video {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  .section3Mac {
+    flex-direction: column;
+  }
+  .section3Mac .card1 {
+    border-radius: 8px;
+    height: 50em;
+    width: 70%;
+    background-position: initial;
+    align-items: center;
+  }
+  .section3Mac .card1 p {
+    font-size: 28px;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px 3px white, 0 0 1em white;
+  }
+  .section3Mac .card2 {
+    border-radius: 8px;
+    height: 50em;
+    width: 70%;
+    background-position: center;
+    align-items: center;
+  }
+  .section3Mac .card2 p {
+    font-size: 28px;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px 3px white, 0 0 1em white;
+  }
+  .section3Mac .card3 {
+    border-radius: 8px;
+    height: 50em;
+    width: 70%;
+    background-position: top;
+    align-items: center;
+  }
+  .section3Mac .card3 p {
+    font-size: 28px;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px 3px white, 0 0 1em white;
+  }
+  .section3Mac .card4 {
+    border-radius: 8px;
+    height: 50em;
+    width: 70%;
+    background-position: center;
+    align-items: center;
+  }
+  .section3Mac .card4 p {
+    font-size: 28px;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px 3px white, 0 0 1em white;
+  }
+  .section3Mac .card5 {
+    border-radius: 8px;
+    height: 50em;
+    width: 70%;
+    background-position: center;
+    align-items: center;
+  }
+  .section3Mac .card5 p {
+    font-size: 28px;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px 3px white, 0 0 1em white;
+  }
+  .section4Mac {
+    flex-direction: column;
+    height: auto;
+  }
+  .section5Mac .container5 {
+    width: 1fr;
+    height: auto;
+    flex-direction: column;
+  }
+  .menu-items .menu-list {
+    gap: 20px;
+  }
+}
 .section1iPhone {
   display: flex;
   justify-content: space-between;
@@ -472,9 +723,14 @@ video {
   text-align: center;
 }
 .section3iPhone .cards {
+  flex-direction: row;
   margin-top: 30px;
   display: flex;
   justify-content: space-evenly;
+}
+.section3iPhone .cards :hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .section3iPhone .cards .card {
   height: 470px;
@@ -484,10 +740,6 @@ video {
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: 0.7s;
-}
-.section3iPhone .cards .card :hover {
-  transform: scale(1.1);
-  cursor: pointer;
 }
 .section3iPhone .cards .card img {
   height: 250px;
@@ -506,6 +758,7 @@ video {
   display: flex;
   justify-content: space-around;
   height: 500px;
+  align-items: center;
 }
 .section4iPhone .card1a {
   height: 150px;
@@ -549,7 +802,6 @@ video {
 
 .section5iPhone {
   margin-top: 30px;
-  margin-top: 30px;
   text-align: center;
 }
 .section5iPhone .cards5 {
@@ -562,7 +814,7 @@ video {
   text-align: center;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: rgba(202, 202, 215, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .section5iPhone .cards5 .card5 h4 {
   padding: 20px;
@@ -577,7 +829,7 @@ video {
   text-align: center;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: rgba(202, 202, 215, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .section5iPhone .cards5 .card6 h4 {
   padding: 20px;
@@ -587,14 +839,80 @@ video {
   height: 500px;
 }
 
+@media screen and (max-width: 834px) {
+  .section1iPhone {
+    display: block;
+    height: 180px;
+    flex-direction: column;
+    padding: 4em;
+  }
+  .section1iPhone h1 {
+    font-size: 50px;
+  }
+  .section2iPhone video {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .section3iPhone h2 {
+    font-size: 35px;
+  }
+  .section3iPhone .cards {
+    flex-direction: column;
+    align-content: center;
+    border-radius: 8px;
+    gap: 20px;
+  }
+  .section3iPhone .cards .card {
+    width: 1fr;
+    height: auto;
+    margin: 10px;
+    padding: 0px 0px 10px 0px;
+  }
+  .section3iPhone .cards .card img {
+    width: 75%;
+    height: auto;
+  }
+  .section3iPhone .cards .card h3 {
+    font-size: 25px;
+  }
+  .section3iPhone .cards .card p {
+    font-size: 16px;
+  }
+  .section4iPhone {
+    display: none;
+  }
+  .section5iPhone {
+    margin-top: 10px;
+  }
+  .section5iPhone h2 {
+    font-size: 35px;
+  }
+  .section5iPhone .cards5 {
+    flex-direction: column;
+    width: 90vw;
+    height: 90vh;
+    padding: 5px;
+    border-radius: 8px;
+  }
+  .section5iPhone .cards5 .card5 img {
+    width: 80%;
+    height: auto;
+  }
+  .section5iPhone .cards5 .card6 img {
+    width: 80%;
+    height: auto;
+  }
+  .menu-items .menu-list {
+    gap: 20px;
+  }
+}
 .section1accessories {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 8em;
-}
-.section1accessories h1 {
-  color: black;
 }
 .section1accessories img {
   height: 500px;
@@ -616,18 +934,22 @@ video {
 .section2accessories .btn:hover {
   color: gainsboro;
 }
+.section2accessories .container-fluid {
+  justify-content: center;
+}
 
-.section3accessories {
-  padding: 100px;
+.section3accessories h2 {
+  text-align: center;
 }
-.section3accessories .c-item {
-  height: 500px;
-  margin-bottom: 30px;
+.section3accessories .card {
+  width: 20rem;
+  margin-bottom: 20px;
+  -webkit-text-size-adjust: auto;
+     -moz-text-size-adjust: auto;
+          text-size-adjust: auto;
 }
-.section3accessories .c-img {
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+.section3accessories .card:hover {
+  opacity: 0.5;
 }
 
 .section1Support img {
@@ -658,7 +980,7 @@ video {
   justify-content: center;
   background-color: rgba(242, 241, 241, 0.6352941176);
   height: 75vh;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(242, 241, 241, 0.6352941176);
 }
 .section3Support .section3background {
   background-color: white;
@@ -731,4 +1053,14 @@ video {
 }
 .section5Support img {
   height: 50vh;
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 1.5s;
+}
+
+@media screen and (max-width: 834px) {
+  .menu-items .menu-list {
+    gap: 20px;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -11,12 +11,12 @@ body h1 {
 }
 
 body h2 {
-    color: $titleH2;
+    color: black;
     font-size: 40px;
 }
 
 body h3 {
-    color: $titleH3b;
+    color: black;
     font-size: 30px;
 }
 
@@ -26,41 +26,93 @@ body h4 {
 }
 
 body p {
-    color: $paragraphB;
+    color: black;
     font-size: 18px;
 }
 
-//navbar
-
-nav {
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 8px;
-    
-        div .logo a img {
-            height: 20px;
-        }
-        div img {
-            height: 20px;
-            margin-left: 30px;
-        }
-        ul {
-            display: flex;
-            list-style: none;
-            li {
-                margin-left: 50px;
-                font-size: 15px;
-                a {
-                    text-decoration: none;
-                    color: black;
-                    &:hover {
-                        color:#0071e3;
+//header
+header {
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        padding-top: 15px;
+        padding-bottom: 8px;
+        
+            ul {
+                display: flex;
+                list-style: none;
+                li {
+                    margin-left: 50px;
+                    font-size: 15px;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        &:hover {
+                            color:#0071e3;
+                        }
+                        img {
+                            height: 20px; 
+                        }
                     }
+                    img {
+                        height: 20px; 
+                        cursor: pointer;
+                    }
+                    
+                
                 }
             }
         }
+
+    .menuicon{
+        display: none;
+        img {
+            height: 20px;
+            cursor: pointer;
+        }
+    }
+    .xicon{
+        display: none;
+        img {
+            height: 20px;
+        }
+    }
+    .logoresponsive {
+        display: none;
+        img {
+            height: 20px;
+        }
+    }
+
+    .dropdown_menu {
+        display: none;
+        padding-top: 5px;
+        // height: 0;
+        // overflow: hidden;
+        ul {
+            flex-direction: column;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            li {
+                a {
+                    text-decoration: none;
+                    color: black;
+                        &:hover {
+                            color:#0071e3;
+                        }
+                }
+                
+            }
+
+        } 
+    }
 }
+
 
 //buttons
 .shop-button {
@@ -72,6 +124,11 @@ nav {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
+    margin: 6px;
+    transition-duration: 0.4s;
+}
+.shop-button:hover {
+    background-color: #2e9620;
 }
 
 .learn-button {
@@ -83,6 +140,11 @@ nav {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
+    margin: 6px;
+    transition-duration: 0.4s;
+}
+.learn-button:hover {
+    background-color: #fcfdff;
 }
 
 //last section per page
@@ -124,3 +186,57 @@ footer {
             font-size: 12px;
         }
 }
+
+//mediaqueries - breakpoints
+@media screen and (max-width: 834px) {
+    .navbar {
+        display: none;
+    }
+    header {
+        .menuicon {
+            display: block;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+        .dropdown_menu {
+            display: block;
+            position: relative;
+            top: 20px;
+            right: 40px;
+            left: 40px
+        }
+        .logoresponsive {
+            display: block;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+
+        }
+    }
+    .menu-items {
+        .menu-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            ul {
+               text-align: center;
+            }       
+         }
+     }
+     .shop-button {
+        padding: 5px 10px;
+        font-size: 16px;
+        border-radius: 8px;
+     }
+     .learn-button {
+        padding: 5px 10px;
+        font-size: 16px;
+        border-radius: 8px;
+     }
+
+     
+     
+} 
+
+

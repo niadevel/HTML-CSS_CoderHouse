@@ -1,8 +1,26 @@
-div video {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+nav {
+    ul {
+        margin: auto;
+        padding: auto;
+        li {
+            justify-content: center;
+        }
+    }
+}
+
+ section video {
     width: 100%;
 }
 
-.container .home-iphone1 {
+
+.container-fluid .home-iphone1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,7 +33,7 @@ div video {
         }
 }
 
-.container .home-iphone2 {
+.container-fluid .home-iphone2 {
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -25,80 +43,82 @@ div video {
     color: white;
     height: 90vh; 
         h1 {
-            color: $titleH1w;
+            color: white;
             padding-bottom: 30px;
         }
         p {
-            color: $paragraphW
+            color: white;
         }
         img {
             width: 40%;
             height: auto; 
-            padding-bottom: 50px;
+            padding-bottom: 20px;
         }
-        div button .button-home-iphone2 {
+        .button-home-iphone2 {
             padding: 45px 20px 20px 20px;
             flex-direction: row;
-            justify-content: space-evenly;
         }
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 20px 20px 20px 0px;
+    padding: 10px 10px 10px 0px;
     text-align: center;
-    background-color: black;
     justify-content: center;
     flex-direction: row;
     margin: 10px 0px;
     width: 1fr;
-    height: 75vh;
+    height: 70vh;
+    gap: 10px;
     
         .cardsHome1 {
+            background-color: black;
         h2 {
+            margin-top: 10px;
             color: white;
-            padding: 8px;
+            padding: 0px;
         }
         p {
             color: white;
-            padding: 10px;
+            padding: 5px;
         }
         .img1 {
-            width: 70%;
-            height: 70%;
+            width: 60%;
+            height: auto;
             object-fit: cover;
-        }
+        } 
         .img2 {
             width: 60%;
-            height: 60%;
+            height: auto;
             object-fit: cover;
         }
-     }
-
+    }
     }
 
 .grid-container2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 20px 20px 20px 0px;
+    padding: 10px 10px 10px 0px;
     text-align: center;
     justify-content: center;
     flex-direction: row;
-    margin: 10px 0px;
+    margin-bottom: 10px;
     width: 1fr;
-    height: 75vh;
+    height: 70vh;
+    gap: 10px;
     
         .cardsHome2 {
             background-image: url(/assets/home/ipadHome.png);
             background-size: cover;
             background-position: center;
         h2 {
-            color: $titleH2;
-            padding: 8px;
+            margin-top: 10px;
+            color: black;
+            padding: 0px;
         }
         p {
-            color: $paragraphB;
+            color: black;
             padding: 10px;
         }
      }
@@ -107,13 +127,51 @@ div video {
             background-size: cover;
             background-position: center;
             h2 {
-                color: $titleH2;
-                padding: 8px;
+                margin-top: 10px;
+                color: black;
+                padding: 0px;
             }
             p {
-                color: $paragraphB;
+                color: black;
                 padding: 10px;
             }
 
     }
+}
+
+//carousel
+
+.c-item {
+    height: auto;
+}
+.c-img {
+    width: 100%;
+    height: auto;
+    object-fit:cover;
+}
+
+//mediaqueries - breakpoints
+@media screen and (max-width: 834px) {
+    section video {
+        margin-top:  10%;
+    }
+    .home-iphone2 {
+        text-align: center;
+        h1 {
+            font-size: 50px;
+            padding: 5px;
+        }
+        img {
+            width: 500px; 
+            padding-bottom: 10px;
+        }
+    }
+    .grid-container {
+        flex-direction: column;
+        
+        .cardsHome1 {
+            
+        }
+    }
+    
 }

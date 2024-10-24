@@ -42,9 +42,11 @@ h2 {
 }
 
 .section3Mac {
+    height: 75vh;
     width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
     scroll-behavior: auto;
     gap: 1.2rem;
     overflow-y: auto;
@@ -52,6 +54,11 @@ h2 {
     scroll-snap-type: mandatory;
     scrollbar-width: none;
     justify-content: center;
+    text-align: center;
+    :hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
  
      .carouselMac::-webkit-scrollbar {
          display: none;
@@ -68,14 +75,16 @@ h2 {
         display: flex;
         justify-content: center;
         
-        
+
         p {
-            color: $paragraphW;
-            padding: 20px 10px 10px 0px;
-            text-emphasis: 25%;
-        }
-         
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+            
+        }   
     }
+    
     .card2 {
         background-image: url(/assets/mac/imgMac2.jpeg);
         background-size: cover;
@@ -87,13 +96,13 @@ h2 {
         display: flex;
         justify-content: center;
         p {
-            color: $paragraphW;
-            padding: 20px 10px 10px 0px;
-            text-emphasis: 25%;
-        }
-        
-        
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+        }  
     }
+
     .card3 {
         background-image: url(/assets/mac/imgMac3.jpeg);
         background-size: cover;
@@ -105,8 +114,9 @@ h2 {
         display: flex;
         justify-content: center;
         p {
-            padding: 20px 10px 0px 0px;
-            text-emphasis: 25%;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
         }
         
     }
@@ -121,8 +131,9 @@ h2 {
         display: flex;
         justify-content: center;
         p {
-            padding: 20px 10px 10px 0px;
-            text-emphasis: 25%; 
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
         }
         
     }
@@ -137,9 +148,10 @@ h2 {
         display: flex;
         justify-content: center;
         p {
-            color: $paragraphW;
-            padding: 20px 10px 10px 0px;
-            text-emphasis: 25%;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
         }
     
     }
@@ -156,7 +168,7 @@ h2 {
     width: 1fr;
     height: 75vh;
     align-items: center;
-    background-color: rgba(237, 236, 236, 0.3);
+    background-color: $backgroundcolor;
     
     h2 {
         padding: 20px;
@@ -174,15 +186,16 @@ h2 {
 
 
 .section5Mac {
-    display:flex;
-    flex-direction: row;
     margin-left: 20px;
     align-content: center;
-
-    div {
+    text-align: center;
+    
+    .container5 {
         height: 50vh;
         width: .2fr;
         justify-content:space-evenly;
+        display:flex;
+        flex-direction: row;
         h3 {
             padding: 20px;
         }
@@ -207,3 +220,127 @@ h2 {
 
     }
 }
+
+//mediaqueries - breakpoints
+@media screen and (max-width: 834px) {
+    .section1Mac {
+        display: block;
+        height: 180px;
+        flex-direction: column;
+        padding: 4em;
+        h1 {
+            font-size: 50px;
+        }
+    }
+    .section2Mac video {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    .section3Mac {
+        flex-direction: column;
+
+       .card1 {
+        border-radius: 8px;
+        height: 50em;
+        width: 70%;
+        background-position: initial;
+        align-items: center;
+
+        p {
+            font-size: 28px;
+            text-align: center;
+            color: black;
+            text-shadow: 
+            1px 1px 3px white,
+            0 0 1em white;
+            }
+       }
+       .card2 {
+        border-radius: 8px;
+        height: 50em;
+        width: 70%;
+        background-position:center;
+        align-items: center;
+
+        p {
+            font-size: 28px;
+            text-align: center;
+            color: black;
+            text-shadow: 
+            1px 1px 3px white,
+            0 0 1em white;
+         }   
+       }  
+       .card3 {
+        border-radius: 8px;
+        height: 50em;
+        width: 70%;
+        background-position:top;
+        align-items: center;
+
+        p {
+            font-size: 28px;
+            text-align: center;
+            color: black;
+            text-shadow: 
+            1px 1px 3px white,
+            0 0 1em white;
+            }
+       }  
+       .card4 {
+        border-radius: 8px;
+        height: 50em;
+        width: 70%;
+        background-position:center;
+        align-items: center;
+
+        p {
+            font-size: 28px;
+            text-align: center;
+            color: black;
+            text-shadow: 
+            1px 1px 3px white,
+            0 0 1em white;
+            }
+       }  
+       .card5 {
+        border-radius: 8px;
+        height: 50em;
+        width: 70%;
+        background-position:center;
+        align-items: center;
+
+        p {
+            font-size: 28px;
+            text-align: center;
+            color: black;
+            text-shadow: 
+            1px 1px 3px white,
+            0 0 1em white;
+        }
+       }  
+    } 
+    .section4Mac {
+       flex-direction: column;
+       height: auto;
+    } 
+    .section5Mac {
+        .container5 {
+            width: 1fr;
+            height: auto;
+            flex-direction: column;
+        }
+    }
+    .menu-items {
+        .menu-list {
+            gap: 20px; 
+         }
+     }
+}
+
+
+

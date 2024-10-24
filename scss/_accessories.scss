@@ -5,9 +5,6 @@
     justify-content: space-around;
     align-items: center;
     padding: 8em;
-    h1{
-        color: $titleH1b;
-    }
     img {
         height: 500px;
     }
@@ -28,17 +25,48 @@
     .btn:hover {
         color:gainsboro;
     }
+    .container-fluid {
+        justify-content: center;
+    }
 }
 
+
+//carousel
 .section3accessories {
-    padding: 100px;
-    .c-item {
-        height: 500px;
-        margin-bottom: 30px;
+  
+    h2 {
+        text-align: center;
+    }
+    // .container-fluid {
+    //     display: flex;
+    // }
+    .card {
+        width: 20rem;
+        margin-bottom: 20px;
+        text-size-adjust: auto;
+        
+    }
+    .card:hover {
+        opacity: 0.5;
     }
     
-    .c-img {
-        height: 100%;
-        object-fit: contain;
-    }
+    
 }
+
+//footer
+
+.menu-items {
+    
+}
+
+//mediaqueries - breakpoints
+@media screen and (max-width: 834px) {
+   
+    }
+    .section3accessories {
+      
+
+    } 
+    
+
+ 

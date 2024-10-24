@@ -5,27 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Support apple page practice">
     <title>Apple Page Clone Support</title>
+    <!--Animate css - librería -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../scss/styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-icons">
-            <a href="../index.html">
-                <img src="../assets/navbar/apple-logo.png" alt="logo apple icon">
-            </a>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                    <img src="../assets/navbar/apple-logo.png" alt="logo apple icon" class="logo">
+                    </a>
+                </li>
+                <li><a href="mac.html">Mac</a></li>
+                <li><a href="iphone.html">iPhone</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="">Support</a></li>
+                <li>
+                    <img src="../assets/navbar/search-icon.png" alt="search icon">
+                </li>
+            </ul>
+        </nav> 
+
+        <div class="menuicon">
+            <img src="../assets/navbar/menu.png" alt="menu icono">
         </div>
+        <div class="xicon">
+            <img src="../assets/navbar/x.png" alt="menu abierto">
+        </div>
+        <div class="logoresponsive">
+            <img src="../assets/navbar/apple-logo.png" alt="logo apple">
+        </div>
+
+        <section class="dropdown_menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="mac.html">Mac</a></li>
+                <li><a href="iphone.html">iPhone</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </section>
+    </header>
+
+    <!-- <nav class="navbar">
         <ul>
-            <li><a href="mac.html">Mac</a></li>
+            <li>
+                <a href="../index.html">
+                 <img src="../assets/navbar/apple-logo.png" alt="logo apple icon">
+                </a>
+            </li>
+            <li><a href="">Mac</a></li>
             <li><a href="iphone.html">iPhone</a></li>
             <li><a href="accessories.html">Accessories</a></li>
             <li><a href="">Support</a></li>
+            <li>
+                <img src="../assets/navbar/search-icon.png" alt="search icon">
+            </li>
         </ul>
-        <div class="nav-icons">
-            <img src="../assets/navbar/search-icon.png" alt="search icon">
-        </div>
-    </nav>    
+    </nav> -->
 
-    <main>
+    <main class="animate__animated animate__fadeIn">
         <section class="section1Support">
             <img src="../assets/support/support1.png" alt="Apple Users Support"/>
         </section>
