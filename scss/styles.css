@@ -908,6 +908,12 @@ video {
     gap: 20px;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .section1accessories {
   display: flex;
   justify-content: space-around;
@@ -948,10 +954,34 @@ video {
      -moz-text-size-adjust: auto;
           text-size-adjust: auto;
 }
+.section3accessories .card .btn-primary:hover {
+  background-color: #2e9620;
+}
 .section3accessories .card:hover {
   opacity: 0.5;
 }
 
+@media screen and (max-width: 834px) {
+  header .navbar {
+    display: none;
+  }
+  .section1accessories {
+    justify-content: center;
+    padding: 7em;
+    gap: 40px;
+  }
+  .section1accessories h1 {
+    font-size: 40px;
+  }
+  .section1accessories img {
+    width: 75%;
+    height: auto;
+  }
+  .section2accessories {
+    margin: 10px;
+    padding: 25px;
+  }
+}
 .section1Support img {
   display: flex;
   width: 100%;
