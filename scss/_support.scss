@@ -13,9 +13,24 @@
         display: flex;
         justify-content: space-evenly;
         padding: 20px;
-        p {
-            padding-top: 20px;
+        :hover {
+            opacity: 0.5;
+            cursor: pointer;
         }
+        .cardsSupportIn {
+            box-shadow: $boxshadow;
+            gap: 20px;
+            width: 20%;
+            height: auto;
+            border-radius: 8px;
+            img {
+                padding-top: 20px;
+            }
+            p {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }   
     }
 }
 
@@ -55,47 +70,52 @@
         display: grid;
         grid-template-columns: 3fr 1fr;
         gap: 15px;
-       }
-       .section4a {
-        background-color: $backgroundcolor;
-        border-radius: 10px;
-        margin-left: 0;
-        box-shadow: $boxshadow;
-        img {
-            height: 250px;
-           }
-        h3 {
-            margin-top: 20px;
-            margin-bottom:  20px;
-        }
-        p {
-            margin-bottom: 20px;
-        }
-       }
-       .section4b {
-        background-color: $backgroundcolor;
-        border-radius: 10px;
-        box-shadow: $boxshadow;
-        img {
-            height: 250px;
-           
-           }
-        h3 {
-            margin-top: 20px;
-            margin-bottom:  20px;
-        }
-        p {
-            margin-bottom: 20px;
-        }
-       }
-    }
     
+       .section4a {
+            background-color: $backgroundcolor;
+            border-radius: 10px;
+            margin-left: 0;
+            box-shadow: $boxshadow;
+            img {
+                height: 250px;
+            }
+            h3 {
+                margin-top: 20px;
+                margin-bottom:  20px;
+            }
+            p {
+                margin-bottom: 20px;
+            }
+            button {
+                cursor: pointer;
+            }
+        }
+       .section4b {
+            background-color: $backgroundcolor;
+            border-radius: 10px;
+            box-shadow: $boxshadow;
+            img {
+                height: 250px;
+            
+            }
+            h3 {
+                margin-top: 20px;
+                margin-bottom:  20px;
+            }
+            p {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}  
+
 .section5Support {
     margin-top: 30px;
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     h2 {
        padding-bottom: 15px; 
     }
@@ -111,10 +131,104 @@
 
 //mediaqueries - breakpoints
 @media screen and (max-width: 834px) {
+  
+    .section1Support {
+        img {
+            margin-top: 10%;
+        }
+    } 
+    
+    .section2Support {
+        h1 {
+            font-size: 50px;
+        } 
+        .cardsSupport {
+            flex-direction: column;
+            gap: 10px;
+            box-shadow: $boxshadow;
+            justify-content: center;
+            .cardsSupportIn {
+                width: 90%;
+                img {
+                    padding-top: 10px;
+                }
+                p {
+                    padding-bottom: 20px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .section3Support {
+        height: 40vh;
+        .section3background {
+            border-radius: 8px;
+            h2 {
+                font-size: 30px;
+            }
+            img {
+                width: 75%;
+                height: auto;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+    .section4Support {
+        .section4div {
+            grid-template-columns: 1fr;
+            .section4a {
+                border-radius: 8px;
+                img {
+                    height: 15vh;
+                    width: 95vw;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+            .section4b {
+                border-radius: 8px;
+                img {
+                    height: 25vh;
+                    width: auto;
+                }
+                p {
+                    font-size: 16px; 
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    .section5Support {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+        .section5div {
+            display: flex;
+            margin-top: 0;
+            flex-direction: column;
+            align-items: center;
+           
+            h2 {
+                padding: 20px;
+                font-size: 35px;
+            }
+            img {
+                width: 100vw;
+                height: auto;
+               }
+            p {
+                font-size: 16px; 
+            }
+        }
+       
+    }        
     .menu-items {
         .menu-list {
             gap: 20px; 
-         }
-     }
-    
+        }
+    }  
 }

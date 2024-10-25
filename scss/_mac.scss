@@ -37,123 +37,123 @@ video {
     animation-fill-mode: both;
 }
 
-h2 {
-    padding: 50px;
-}
+
 
 .section3Mac {
-    height: 75vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    scroll-behavior: auto;
-    gap: 1.2rem;
-    overflow-y: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: mandatory;
-    scrollbar-width: none;
-    justify-content: center;
-    text-align: center;
-    :hover {
-        opacity: 0.5;
-        cursor: pointer;
+    h2 {
+        padding: 5% 5% 0 5%;
     }
- 
-     .carouselMac::-webkit-scrollbar {
-         display: none;
-    }
-    
-    .card1 {
-        background-image: url(/assets/mac/imgMac1.jpeg);
-        background-size: cover;
-        background-position: center;
-        scroll-snap-align: start;
-        border-radius: 30px;
-        height: 600px;
-        width: 300px;
+    .cardsMac {
+        height: 75vh;
+        width: 100%;
         display: flex;
+        flex-direction: row;
+        align-items: center;
+        scroll-behavior: auto;
+        gap: 1.2rem;
+        overflow-y: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: mandatory;
+        scrollbar-width: none;
         justify-content: center;
+        text-align: center;
+        :hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    
+        .cardsMac::-webkit-scrollbar {
+            display: none;
+        }
+    
+        .card1 {
+            background-image: url(/assets/mac/imgMac1.jpeg);
+            background-size: cover;
+            background-position: center;
+            scroll-snap-align: start;
+            border-radius: 30px;
+            height: 600px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            p {
+                color: white;
+                padding: 20px;
+                font-size: 20px;
+                text-align: center;
+                
+            }   
+        }
         
+        .card2 {
+            background-image: url(/assets/mac/imgMac2.jpeg);
+            background-size: cover;
+            background-position: center;
+            scroll-snap-align: start;
+            border-radius: 30px;
+            height: 600px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            p {
+                color: white;
+                padding: 20px;
+                font-size: 20px;
+                text-align: center;
+            }  
+        }
 
-        p {
-            color: white;
-            padding: 20px;
-            font-size: 20px;
-            text-align: center;
-            
-        }   
-    }
-    
-    .card2 {
-        background-image: url(/assets/mac/imgMac2.jpeg);
-        background-size: cover;
-        background-position: center;
-        scroll-snap-align: start;
-        border-radius: 30px;
-        height: 600px;
-        width: 300px;
-        display: flex;
-        justify-content: center;
-        p {
-            color: white;
-            padding: 20px;
-            font-size: 20px;
-            text-align: center;
-        }  
-    }
+        .card3 {
+            background-image: url(/assets/mac/imgMac3.jpeg);
+            background-size: cover;
+            background-position: center;
+            scroll-snap-align: start;
+            border-radius: 30px;
+            height: 600px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            p {
+                padding: 20px;
+                font-size: 20px;
+                text-align: center;
+            }  
+        }
 
-    .card3 {
-        background-image: url(/assets/mac/imgMac3.jpeg);
-        background-size: cover;
-        background-position: center;
-        scroll-snap-align: start;
-        border-radius: 30px;
-        height: 600px;
-        width: 300px;
-        display: flex;
-        justify-content: center;
-        p {
-            padding: 20px;
-            font-size: 20px;
-            text-align: center;
+        .card4 {
+            background-image: url(/assets/mac/imgMac4.jpeg);
+            background-size: cover;
+            background-position: center;
+            scroll-snap-align: start;
+            border-radius: 30px;
+            height: 600px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            p {
+                padding: 20px;
+                font-size: 20px;
+                text-align: center;
+            } 
         }
-        
-    }
-    .card4 {
-        background-image: url(/assets/mac/imgMac4.jpeg);
-        background-size: cover;
-        background-position: center;
-        scroll-snap-align: start;
-        border-radius: 30px;
-        height: 600px;
-        width: 300px;
-        display: flex;
-        justify-content: center;
-        p {
-            padding: 20px;
-            font-size: 20px;
-            text-align: center;
+
+        .card5 {
+            background-image: url(/assets/mac/imgMac5.jpeg);
+            background-size: cover;
+            background-position: center;
+            scroll-snap-align: start;
+            border-radius: 30px;
+            height: 600px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            p {
+                color: white;
+                padding: 20px;
+                font-size: 20px;
+                text-align: center;
+            }
         }
-        
-    }
-    .card5 {
-        background-image: url(/assets/mac/imgMac5.jpeg);
-        background-size: cover;
-        background-position: center;
-        scroll-snap-align: start;
-        border-radius: 30px;
-        height: 600px;
-        width: 300px;
-        display: flex;
-        justify-content: center;
-        p {
-            color: white;
-            padding: 20px;
-            font-size: 20px;
-            text-align: center;
-        }
-    
     }
 }
 
@@ -197,7 +197,7 @@ h2 {
         display:flex;
         flex-direction: row;
         h3 {
-            padding: 20px;
+            padding: 30px;
         }
         #mac1{
             width: 75%;
@@ -214,7 +214,7 @@ h2 {
             height: auto;
             padding-bottom: 20px;
         }
-        p{
+        p {
             padding-bottom: 20px;
         }
 
@@ -260,69 +260,69 @@ h2 {
             }
        }
        .card2 {
-        border-radius: 8px;
-        height: 50em;
-        width: 70%;
-        background-position:center;
-        align-items: center;
+            border-radius: 8px;
+            height: 50em;
+            width: 70%;
+            background-position:center;
+            align-items: center;
 
-        p {
-            font-size: 28px;
-            text-align: center;
-            color: black;
-            text-shadow: 
-            1px 1px 3px white,
-            0 0 1em white;
-         }   
-       }  
+            p {
+                font-size: 28px;
+                text-align: center;
+                color: black;
+                text-shadow: 
+                1px 1px 3px white,
+                0 0 1em white;
+            }   
+        }  
        .card3 {
-        border-radius: 8px;
-        height: 50em;
-        width: 70%;
-        background-position:top;
-        align-items: center;
+            border-radius: 8px;
+            height: 50em;
+            width: 70%;
+            background-position:top;
+            align-items: center;
 
-        p {
-            font-size: 28px;
-            text-align: center;
-            color: black;
-            text-shadow: 
-            1px 1px 3px white,
-            0 0 1em white;
+            p {
+                font-size: 28px;
+                text-align: center;
+                color: black;
+                text-shadow: 
+                1px 1px 3px white,
+                0 0 1em white;
             }
-       }  
+        }  
        .card4 {
-        border-radius: 8px;
-        height: 50em;
-        width: 70%;
-        background-position:center;
-        align-items: center;
+            border-radius: 8px;
+            height: 50em;
+            width: 70%;
+            background-position:center;
+            align-items: center;
 
-        p {
-            font-size: 28px;
-            text-align: center;
-            color: black;
-            text-shadow: 
-            1px 1px 3px white,
-            0 0 1em white;
+            p {
+                font-size: 28px;
+                text-align: center;
+                color: black;
+                text-shadow: 
+                1px 1px 3px white,
+                0 0 1em white;
             }
-       }  
+        }  
        .card5 {
-        border-radius: 8px;
-        height: 50em;
-        width: 70%;
-        background-position:center;
-        align-items: center;
+            border-radius: 8px;
+            height: 50em;
+            width: 70%;
+            background-position:center;
+            align-items: center;
 
-        p {
-            font-size: 28px;
-            text-align: center;
-            color: black;
-            text-shadow: 
-            1px 1px 3px white,
-            0 0 1em white;
-        }
-       }  
+            p {
+                font-size: 28px;
+                text-align: center;
+                color: black;
+                text-shadow: 
+                1px 1px 3px white,
+                0 0 1em white;
+            }
+        }  
     } 
     .section4Mac {
        flex-direction: column;
@@ -339,7 +339,7 @@ h2 {
         .menu-list {
             gap: 20px; 
          }
-     }
+    }
 }
 
 

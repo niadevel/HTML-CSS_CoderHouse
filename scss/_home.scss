@@ -26,11 +26,11 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 60px;
-        img {
-            width: 550px;
-            height: auto;
-            padding: 30px;
-        }
+    img {
+        width: 550px;
+        height: auto;
+        padding: 30px;
+    }
 }
 
 .container-fluid .home-iphone2 {
@@ -42,22 +42,22 @@ nav {
     background-color: black;
     color: white;
     height: 90vh; 
-        h1 {
-            color: white;
-            padding-bottom: 30px;
-        }
-        p {
-            color: white;
-        }
-        img {
-            width: 40%;
-            height: auto; 
-            padding-bottom: 20px;
-        }
-        .button-home-iphone2 {
-            padding: 45px 20px 20px 20px;
-            flex-direction: row;
-        }
+    h1 {
+        color: white;
+        padding-bottom: 30px;
+    }
+    p {
+        color: white;
+    }
+    img {
+        width: 40%;
+        height: auto; 
+        padding-bottom: 20px;
+    }
+    .button-home-iphone2 {
+        padding: 45px 20px 20px 20px;
+        flex-direction: row;
+    }
 }
 
 .grid-container {
@@ -94,7 +94,7 @@ nav {
             object-fit: cover;
         }
     }
-    }
+}
 
 .grid-container2 {
     display: grid;
@@ -108,10 +108,10 @@ nav {
     height: 70vh;
     gap: 10px;
     
-        .cardsHome2 {
-            background-image: url(/assets/home/ipadHome.png);
-            background-size: cover;
-            background-position: center;
+    .cardsHome2 {
+        background-image: url(/assets/home/ipadHome.png);
+        background-size: cover;
+        background-position: center;
         h2 {
             margin-top: 10px;
             color: black;
@@ -121,21 +121,20 @@ nav {
             color: black;
             padding: 10px;
         }
-     }
-        .cardsHome3 {
-            background-image: url(/assets/home/airpodshome.png);
-            background-size: cover;
-            background-position: center;
-            h2 {
-                margin-top: 10px;
-                color: black;
-                padding: 0px;
-            }
-            p {
-                color: black;
-                padding: 10px;
-            }
-
+    }
+    .cardsHome3 {
+        background-image: url(/assets/home/airpodshome.png);
+        background-size: cover;
+        background-position: center;
+        h2 {
+            margin-top: 10px;
+            color: black;
+            padding: 0px;
+        }
+        p {
+            color: black;
+            padding: 10px;
+        }
     }
 }
 
@@ -168,10 +167,6 @@ nav {
     }
     .grid-container {
         flex-direction: column;
-        
-        .cardsHome1 {
-            
-        }
     }
     
 }

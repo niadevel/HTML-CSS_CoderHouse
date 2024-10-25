@@ -12,7 +12,7 @@ _A continuación parte de las herramientas y tecnologías utilizadas._
 [![Bootstrap Follow](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white&labelColor=101010)](#)
 [![Sass Follow](https://img.shields.io/badge/Sass-bf4080?style=for-the-badge&logo=sass&logoColor=white&labelColor=101010)](#)
 
-_También se utiliza la librería AOS._
+_También se utilizan las librerías AOS y Animate.css._
 
 
 ![Apple Page Pratice](https://github.com/niadevel/HTML-CSS_CoderHouse/blob/main/assets/MacBook%20Pro%20%26%20iPhone%2013%20Mockup%20html%20css.png)

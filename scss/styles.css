@@ -413,11 +413,10 @@ video {
   animation-fill-mode: both;
 }
 
-h2 {
-  padding: 50px;
+.section3Mac h2 {
+  padding: 5% 5% 0 5%;
 }
-
-.section3Mac {
+.section3Mac .cardsMac {
   height: 75vh;
   width: 100%;
   display: flex;
@@ -432,14 +431,14 @@ h2 {
   justify-content: center;
   text-align: center;
 }
-.section3Mac :hover {
+.section3Mac .cardsMac :hover {
   opacity: 0.5;
   cursor: pointer;
 }
-.section3Mac .carouselMac::-webkit-scrollbar {
+.section3Mac .cardsMac .cardsMac::-webkit-scrollbar {
   display: none;
 }
-.section3Mac .card1 {
+.section3Mac .cardsMac .card1 {
   background-image: url(/assets/mac/imgMac1.jpeg);
   background-size: cover;
   background-position: center;
@@ -450,13 +449,13 @@ h2 {
   display: flex;
   justify-content: center;
 }
-.section3Mac .card1 p {
+.section3Mac .cardsMac .card1 p {
   color: white;
   padding: 20px;
   font-size: 20px;
   text-align: center;
 }
-.section3Mac .card2 {
+.section3Mac .cardsMac .card2 {
   background-image: url(/assets/mac/imgMac2.jpeg);
   background-size: cover;
   background-position: center;
@@ -467,13 +466,13 @@ h2 {
   display: flex;
   justify-content: center;
 }
-.section3Mac .card2 p {
+.section3Mac .cardsMac .card2 p {
   color: white;
   padding: 20px;
   font-size: 20px;
   text-align: center;
 }
-.section3Mac .card3 {
+.section3Mac .cardsMac .card3 {
   background-image: url(/assets/mac/imgMac3.jpeg);
   background-size: cover;
   background-position: center;
@@ -484,12 +483,12 @@ h2 {
   display: flex;
   justify-content: center;
 }
-.section3Mac .card3 p {
+.section3Mac .cardsMac .card3 p {
   padding: 20px;
   font-size: 20px;
   text-align: center;
 }
-.section3Mac .card4 {
+.section3Mac .cardsMac .card4 {
   background-image: url(/assets/mac/imgMac4.jpeg);
   background-size: cover;
   background-position: center;
@@ -500,12 +499,12 @@ h2 {
   display: flex;
   justify-content: center;
 }
-.section3Mac .card4 p {
+.section3Mac .cardsMac .card4 p {
   padding: 20px;
   font-size: 20px;
   text-align: center;
 }
-.section3Mac .card5 {
+.section3Mac .cardsMac .card5 {
   background-image: url(/assets/mac/imgMac5.jpeg);
   background-size: cover;
   background-position: center;
@@ -516,7 +515,7 @@ h2 {
   display: flex;
   justify-content: center;
 }
-.section3Mac .card5 p {
+.section3Mac .cardsMac .card5 p {
   color: white;
   padding: 20px;
   font-size: 20px;
@@ -560,7 +559,7 @@ h2 {
   flex-direction: row;
 }
 .section5Mac .container5 h3 {
-  padding: 20px;
+  padding: 30px;
 }
 .section5Mac .container5 #mac1 {
   width: 75%;
@@ -997,8 +996,23 @@ video {
   justify-content: space-evenly;
   padding: 20px;
 }
-.section2Support .cardsSupport p {
+.section2Support .cardsSupport :hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.section2Support .cardsSupport .cardsSupportIn {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  gap: 20px;
+  width: 20%;
+  height: auto;
+  border-radius: 8px;
+}
+.section2Support .cardsSupport .cardsSupportIn img {
   padding-top: 20px;
+}
+.section2Support .cardsSupport .cardsSupportIn p {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .section3Support {
@@ -1039,35 +1053,38 @@ video {
   grid-template-columns: 3fr 1fr;
   gap: 15px;
 }
-.section4Support .section4a {
+.section4Support .section4div .section4a {
   background-color: rgba(242, 241, 241, 0.6352941176);
   border-radius: 10px;
   margin-left: 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.section4Support .section4a img {
+.section4Support .section4div .section4a img {
   height: 250px;
 }
-.section4Support .section4a h3 {
+.section4Support .section4div .section4a h3 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.section4Support .section4a p {
+.section4Support .section4div .section4a p {
   margin-bottom: 20px;
 }
-.section4Support .section4b {
+.section4Support .section4div .section4a button {
+  cursor: pointer;
+}
+.section4Support .section4div .section4b {
   background-color: rgba(242, 241, 241, 0.6352941176);
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.section4Support .section4b img {
+.section4Support .section4div .section4b img {
   height: 250px;
 }
-.section4Support .section4b h3 {
+.section4Support .section4div .section4b h3 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.section4Support .section4b p {
+.section4Support .section4div .section4b p {
   margin-bottom: 20px;
 }
 
@@ -1077,6 +1094,7 @@ video {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .section5Support h2 {
   padding-bottom: 15px;
@@ -1090,6 +1108,90 @@ video {
 }
 
 @media screen and (max-width: 834px) {
+  .section1Support img {
+    margin-top: 10%;
+  }
+  .section2Support h1 {
+    font-size: 50px;
+  }
+  .section2Support .cardsSupport {
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    justify-content: center;
+  }
+  .section2Support .cardsSupport .cardsSupportIn {
+    width: 90%;
+  }
+  .section2Support .cardsSupport .cardsSupportIn img {
+    padding-top: 10px;
+  }
+  .section2Support .cardsSupport .cardsSupportIn p {
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+  .section3Support {
+    height: 40vh;
+  }
+  .section3Support .section3background {
+    border-radius: 8px;
+  }
+  .section3Support .section3background h2 {
+    font-size: 30px;
+  }
+  .section3Support .section3background img {
+    width: 75%;
+    height: auto;
+  }
+  .section3Support .section3background p {
+    font-size: 16px;
+  }
+  .section4Support .section4div {
+    grid-template-columns: 1fr;
+  }
+  .section4Support .section4div .section4a {
+    border-radius: 8px;
+  }
+  .section4Support .section4div .section4a img {
+    height: 15vh;
+    width: 95vw;
+  }
+  .section4Support .section4div .section4a p {
+    font-size: 16px;
+  }
+  .section4Support .section4div .section4b {
+    border-radius: 8px;
+  }
+  .section4Support .section4div .section4b img {
+    height: 25vh;
+    width: auto;
+  }
+  .section4Support .section4div .section4b p {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .section5Support {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .section5Support .section5div {
+    display: flex;
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section5Support .section5div h2 {
+    padding: 20px;
+    font-size: 35px;
+  }
+  .section5Support .section5div img {
+    width: 100vw;
+    height: auto;
+  }
+  .section5Support .section5div p {
+    font-size: 16px;
+  }
   .menu-items .menu-list {
     gap: 20px;
   }
