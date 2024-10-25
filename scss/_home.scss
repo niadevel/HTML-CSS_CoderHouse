@@ -63,11 +63,11 @@ nav {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 10px 10px 10px 0px;
+    padding: 10px 0px;
     text-align: center;
     justify-content: center;
     flex-direction: row;
-    margin: 10px 0px;
+    margin-bottom: 2%;
     width: 1fr;
     height: 70vh;
     gap: 10px;
@@ -99,7 +99,7 @@ nav {
 .grid-container2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 10px 10px 10px 0px;
+    padding: 10px 0px;
     text-align: center;
     justify-content: center;
     flex-direction: row;
@@ -154,12 +154,9 @@ nav {
     .container-fluid {
         --bs-gutter-x: 0;
     }
-
-    section video {
-        margin-top:  10%;
-    }
-    .home-iphone2 {
+    .container-fluid .home-iphone2 {
         text-align: center;
+        height: 75vh;
         h1 {
             font-size: 50px;
             padding: 5px;
@@ -169,8 +166,21 @@ nav {
             padding-bottom: 10px;
         }
     }
+
+    section video {
+        margin-top:  10%;
+    }
     .grid-container {
         flex-direction: column;
+        height: auto;
+        padding: 10px 0px;
+        margin: 0px;
+    }
+    .grid-container2 {
+        flex-direction: column;
+        height: 96vh;
+        padding: 0px 0px 10px 0px;
+        
     }
     
 }
