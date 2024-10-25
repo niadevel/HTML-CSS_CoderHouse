@@ -151,6 +151,10 @@ nav {
 
 //mediaqueries - breakpoints
 @media screen and (max-width: 834px) {
+    .container-fluid {
+        --bs-gutter-x: 0;
+    }
+
     section video {
         margin-top:  10%;
     }
