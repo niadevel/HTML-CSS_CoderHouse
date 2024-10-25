@@ -241,88 +241,93 @@ video {
         font-size: 35px;
     }
     .section3Mac {
-        flex-direction: column;
-
-       .card1 {
-        border-radius: 8px;
-        height: 50em;
-        width: 70%;
-        background-position: initial;
-        align-items: center;
-
-        p {
-            font-size: 28px;
+        h2 {
             text-align: center;
-            color: black;
-            text-shadow: 
-            1px 1px 3px white,
-            0 0 1em white;
-            }
-       }
-       .card2 {
-            border-radius: 8px;
-            height: 50em;
-            width: 70%;
-            background-position:center;
-            align-items: center;
+            padding: 8%;
+        }
+        .cardsMac {
+            flex-direction: column;
+            .card1 {
+                border-radius: 8px;
+                height: 50em;
+                width: 70%;
+                background-position: initial;
+                align-items: center;
 
-            p {
-                font-size: 28px;
-                text-align: center;
-                color: black;
-                text-shadow: 
-                1px 1px 3px white,
-                0 0 1em white;
-            }   
-        }  
-       .card3 {
-            border-radius: 8px;
-            height: 50em;
-            width: 70%;
-            background-position:top;
-            align-items: center;
-
-            p {
-                font-size: 28px;
-                text-align: center;
-                color: black;
-                text-shadow: 
-                1px 1px 3px white,
-                0 0 1em white;
+                p {
+                    font-size: 28px;
+                    text-align: center;
+                    color: black;
+                    text-shadow: 
+                    1px 1px 3px white,
+                    0 0 1em white;
+                    }
             }
-        }  
-       .card4 {
-            border-radius: 8px;
-            height: 50em;
-            width: 70%;
-            background-position:center;
-            align-items: center;
+            .card2 {
+                border-radius: 8px;
+                height: 50em;
+                width: 70%;
+                background-position:center;
+                align-items: center;
 
-            p {
-                font-size: 28px;
-                text-align: center;
-                color: black;
-                text-shadow: 
-                1px 1px 3px white,
-                0 0 1em white;
-            }
-        }  
-       .card5 {
-            border-radius: 8px;
-            height: 50em;
-            width: 70%;
-            background-position:center;
-            align-items: center;
+                p {
+                    font-size: 28px;
+                    text-align: center;
+                    color: black;
+                    text-shadow: 
+                    1px 1px 3px white,
+                    0 0 1em white;
+                }   
+            }  
+            .card3 {
+                border-radius: 8px;
+                height: 50em;
+                width: 70%;
+                background-position:top;
+                align-items: center;
 
-            p {
-                font-size: 28px;
-                text-align: center;
-                color: black;
-                text-shadow: 
-                1px 1px 3px white,
-                0 0 1em white;
-            }
-        }  
+                p {
+                    font-size: 28px;
+                    text-align: center;
+                    color: black;
+                    text-shadow: 
+                    1px 1px 3px white,
+                    0 0 1em white;
+                }
+            }  
+            .card4 {
+                border-radius: 8px;
+                height: 50em;
+                width: 70%;
+                background-position:center;
+                align-items: center;
+
+                p {
+                    font-size: 28px;
+                    text-align: center;
+                    color: black;
+                    text-shadow: 
+                    1px 1px 3px white,
+                    0 0 1em white;
+                }
+            }  
+            .card5 {
+                border-radius: 8px;
+                height: 50em;
+                width: 70%;
+                background-position:center;
+                align-items: center;
+
+                p {
+                    font-size: 28px;
+                    text-align: center;
+                    color: black;
+                    text-shadow: 
+                    1px 1px 3px white,
+                    0 0 1em white;
+                }
+            }  
+        }
     } 
     .section4Mac {
        flex-direction: column;

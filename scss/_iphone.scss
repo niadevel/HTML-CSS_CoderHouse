@@ -186,7 +186,7 @@ video {
         }
         .cards {
             flex-direction: column;
-            align-content: center;
+            align-items: center;
             border-radius: 8px;
             gap: 20px;
             .card {
@@ -217,19 +217,23 @@ video {
         }
         .cards5 {
             flex-direction: column;
-            width: 90vw;
-            height: 90vh;
+            align-items: center;
             padding: 5px;
             border-radius: 8px;
             .card5 {
+                width: 90vw;
+                height: auto;
                 img {
-                    width: 80%;
+                    width: 90%;
                     height: auto;
                 }
             }
             .card6 {
+                margin-top: 10px;
+                width: 90vw;
+                height: auto;
                 img {
-                    width: 80%;
+                    width: 90%;
                     height: auto;
                 }
             }

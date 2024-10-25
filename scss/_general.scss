@@ -206,6 +206,10 @@ footer {
         }
     }
     .menu-items {
+        .store {
+            margin-left: 0;
+            justify-content: center;
+        }
         .menu-list {
             display: flex;
             flex-direction: column;

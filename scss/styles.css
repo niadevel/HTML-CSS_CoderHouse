@@ -189,6 +189,10 @@ footer p {
     display: block;
     padding: 10px;
   }
+  .menu-items .store {
+    margin-left: 0;
+    justify-content: center;
+  }
   .menu-items .menu-list {
     display: flex;
     flex-direction: column;
@@ -368,7 +372,7 @@ section video {
     padding: 5px;
   }
   .container-fluid .home-iphone2 img {
-    width: 500px;
+    width: 300px;
     padding-bottom: 10px;
   }
   section video {
@@ -609,69 +613,73 @@ video {
   h2 {
     font-size: 35px;
   }
-  .section3Mac {
+  .section3Mac h2 {
+    text-align: center;
+    padding: 8%;
+  }
+  .section3Mac .cardsMac {
     flex-direction: column;
   }
-  .section3Mac .card1 {
+  .section3Mac .cardsMac .card1 {
     border-radius: 8px;
     height: 50em;
     width: 70%;
     background-position: initial;
     align-items: center;
   }
-  .section3Mac .card1 p {
+  .section3Mac .cardsMac .card1 p {
     font-size: 28px;
     text-align: center;
     color: black;
     text-shadow: 1px 1px 3px white, 0 0 1em white;
   }
-  .section3Mac .card2 {
+  .section3Mac .cardsMac .card2 {
     border-radius: 8px;
     height: 50em;
     width: 70%;
     background-position: center;
     align-items: center;
   }
-  .section3Mac .card2 p {
+  .section3Mac .cardsMac .card2 p {
     font-size: 28px;
     text-align: center;
     color: black;
     text-shadow: 1px 1px 3px white, 0 0 1em white;
   }
-  .section3Mac .card3 {
+  .section3Mac .cardsMac .card3 {
     border-radius: 8px;
     height: 50em;
     width: 70%;
     background-position: top;
     align-items: center;
   }
-  .section3Mac .card3 p {
+  .section3Mac .cardsMac .card3 p {
     font-size: 28px;
     text-align: center;
     color: black;
     text-shadow: 1px 1px 3px white, 0 0 1em white;
   }
-  .section3Mac .card4 {
+  .section3Mac .cardsMac .card4 {
     border-radius: 8px;
     height: 50em;
     width: 70%;
     background-position: center;
     align-items: center;
   }
-  .section3Mac .card4 p {
+  .section3Mac .cardsMac .card4 p {
     font-size: 28px;
     text-align: center;
     color: black;
     text-shadow: 1px 1px 3px white, 0 0 1em white;
   }
-  .section3Mac .card5 {
+  .section3Mac .cardsMac .card5 {
     border-radius: 8px;
     height: 50em;
     width: 70%;
     background-position: center;
     align-items: center;
   }
-  .section3Mac .card5 p {
+  .section3Mac .cardsMac .card5 p {
     font-size: 28px;
     text-align: center;
     color: black;
@@ -872,7 +880,7 @@ video {
   }
   .section3iPhone .cards {
     flex-direction: column;
-    align-content: center;
+    align-items: center;
     border-radius: 8px;
     gap: 20px;
   }
@@ -903,17 +911,25 @@ video {
   }
   .section5iPhone .cards5 {
     flex-direction: column;
-    width: 90vw;
-    height: 90vh;
+    align-items: center;
     padding: 5px;
     border-radius: 8px;
   }
+  .section5iPhone .cards5 .card5 {
+    width: 90vw;
+    height: auto;
+  }
   .section5iPhone .cards5 .card5 img {
-    width: 80%;
+    width: 90%;
+    height: auto;
+  }
+  .section5iPhone .cards5 .card6 {
+    margin-top: 10px;
+    width: 90vw;
     height: auto;
   }
   .section5iPhone .cards5 .card6 img {
-    width: 80%;
+    width: 90%;
     height: auto;
   }
   .menu-items .menu-list {
