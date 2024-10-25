@@ -803,6 +803,9 @@ video {
   margin-top: 30px;
   text-align: center;
 }
+.section5iPhone h2 {
+  padding: 40px;
+}
 .section5iPhone .cards5 {
   display: flex;
   justify-content: space-evenly;
