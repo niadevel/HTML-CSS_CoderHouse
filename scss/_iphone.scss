@@ -38,7 +38,7 @@ video {
 }
 
 .section3iPhone {
-    margin-top: 30px;
+    margin: 5%;
     text-align: center;
     .cards {
         flex-direction: row;
@@ -73,8 +73,7 @@ video {
 }
 
 .section4iPhone {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 5%;
     display: flex;
     justify-content: space-around;   
     height: 500px;
@@ -124,7 +123,7 @@ video {
     margin-top: 30px;
     text-align: center;
     h2 {
-        padding: 40px;
+        padding: 20px 0px 40px 0px;
     }
    .cards5 {
         display: flex;

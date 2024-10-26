@@ -736,7 +736,7 @@ video {
 }
 
 .section3iPhone {
-  margin-top: 30px;
+  margin: 5%;
   text-align: center;
 }
 .section3iPhone .cards {
@@ -770,8 +770,7 @@ video {
 }
 
 .section4iPhone {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 5%;
   display: flex;
   justify-content: space-around;
   height: 500px;
@@ -822,7 +821,7 @@ video {
   text-align: center;
 }
 .section5iPhone h2 {
-  padding: 40px;
+  padding: 20px 0px 40px 0px;
 }
 .section5iPhone .cards5 {
   display: flex;
