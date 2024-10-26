@@ -779,7 +779,7 @@ video {
 }
 .section4iPhone .card1a {
   height: 150px;
-  width: 80px;
+  width: auto;
   text-align: center;
   padding: 25px;
 }
@@ -792,7 +792,7 @@ video {
 }
 .section4iPhone .card2a {
   height: 150px;
-  width: 80px;
+  width: auto;
   text-align: center;
   padding: 25px;
 }
@@ -805,7 +805,7 @@ video {
 }
 .section4iPhone .card3a {
   height: 150px;
-  width: 80px;
+  width: auto;
   text-align: center;
   padding: 25px;
 }
@@ -829,8 +829,8 @@ video {
   justify-content: space-evenly;
 }
 .section5iPhone .cards5 .card5 {
-  height: 700px;
-  width: 48%;
+  height: auto;
+  width: 45vw;
   text-align: center;
   padding: 20px;
   border-radius: 10px;
@@ -841,11 +841,12 @@ video {
 }
 .section5iPhone .cards5 .card5 img {
   padding-top: 20px;
-  height: 550px;
+  height: auto;
+  width: -webkit-fill-available;
 }
 .section5iPhone .cards5 .card6 {
-  height: 700px;
-  width: 48%;
+  height: auto;
+  width: 45vw;
   text-align: center;
   padding: 20px;
   border-radius: 10px;
@@ -856,7 +857,8 @@ video {
 }
 .section5iPhone .cards5 .card6 img {
   padding-top: 20px;
-  height: 500px;
+  height: auto;
+  width: -webkit-fill-available;
 }
 
 @media screen and (max-width: 834px) {

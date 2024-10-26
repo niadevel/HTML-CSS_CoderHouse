@@ -81,7 +81,7 @@ video {
     align-items: center;
     .card1a {
         height:150px;
-        width: 80px;
+        width: auto;
         text-align: center;
         padding: 25px;
         img {
@@ -94,7 +94,7 @@ video {
     }
     .card2a {
         height:150px;
-        width: 80px;
+        width: auto;
         text-align: center;
         padding: 25px;
         img {
@@ -107,7 +107,7 @@ video {
     }
     .card3a {
         height:150px;
-        width: 80px;
+        width: auto;
         text-align: center;
         padding: 25px;
         img {
@@ -130,8 +130,8 @@ video {
         display: flex;
         justify-content: space-evenly;
         .card5 {
-            height: 700px;
-            width: 48%;
+            height: auto;
+            width: 45vw;
             text-align: center;
             padding: 20px;
             border-radius: 10px;
@@ -141,12 +141,13 @@ video {
             }
             img {
                 padding-top: 20px;
-                height: 550px;
+                height: auto;
+                width: -webkit-fill-available;
             } 
         }
         .card6{
-            height: 700px;
-            width: 48%;
+            height: auto;
+            width: 45vw;
             text-align: center;
             padding: 20px;
             border-radius: 10px;
@@ -156,7 +157,8 @@ video {
             }
             img {
                 padding-top: 20px;
-                height: 500px;
+                height: auto;
+                width: -webkit-fill-available;
             }
         }
     } 
