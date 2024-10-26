@@ -134,7 +134,7 @@
   
     .section1Support {
         img {
-            margin-top: 10%;
+            margin-top: 3%;
         }
     } 
     
@@ -144,6 +144,7 @@
         } 
         .cardsSupport {
             flex-direction: column;
+            align-items: center;
             gap: 10px;
             box-shadow: $boxshadow;
             justify-content: center;
@@ -164,6 +165,7 @@
         .section3background {
             border-radius: 8px;
             h2 {
+                padding-top: 10px;
                 font-size: 30px;
             }
             img {
@@ -172,27 +174,30 @@
             }
             p {
                 font-size: 16px;
+                padding: 0px 10px;
             }
         }
     }
     .section4Support {
+        height:auto;
         .section4div {
             grid-template-columns: 1fr;
             .section4a {
                 border-radius: 8px;
                 img {
-                    height: 15vh;
-                    width: 95vw;
+                    height: auto;
+                    width: 90vw;
                 }
                 p {
                     font-size: 16px;
+                    padding: 0px 10px;
                 }
             }
             .section4b {
                 border-radius: 8px;
                 img {
-                    height: 25vh;
-                    width: auto;
+                    height: auto;
+                    width: 50vw;
                 }
                 p {
                     font-size: 16px; 
@@ -222,6 +227,7 @@
                }
             p {
                 font-size: 16px; 
+                padding: 0px 10px;
             }
         }
        
