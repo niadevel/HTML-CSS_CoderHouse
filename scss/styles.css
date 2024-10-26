@@ -974,9 +974,10 @@ video {
 
 .section3accessories h2 {
   text-align: center;
+  padding-bottom: 30px;
 }
 .section3accessories .card {
-  width: 20rem;
+  width: 1fr;
   margin-bottom: 20px;
   -webkit-text-size-adjust: auto;
      -moz-text-size-adjust: auto;
@@ -998,19 +999,25 @@ video {
   }
   .section1accessories {
     justify-content: center;
-    padding: 7em;
+    padding: 3em 7em;
     gap: 40px;
   }
   .section1accessories h1 {
     font-size: 40px;
   }
   .section1accessories img {
-    width: 75%;
+    width: 30vw;
     height: auto;
   }
   .section2accessories {
     margin: 10px;
     padding: 25px;
+  }
+  .section3accessories h2 {
+    padding: 10px;
+  }
+  .section3accessories .card {
+    width: auto;
   }
 }
 .section1Support img {

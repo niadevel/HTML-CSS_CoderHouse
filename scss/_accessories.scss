@@ -40,9 +40,10 @@
 .section3accessories {
     h2 {
         text-align: center;
+        padding-bottom: 30px;
     }
     .card {
-        width: 20rem;
+        width: 1fr;
         margin-bottom: 20px;
         text-size-adjust: auto; 
         .btn-primary:hover {
@@ -67,13 +68,13 @@
     }
     .section1accessories {
         justify-content: center;
-        padding: 7em;
+        padding: 3em 7em;
         gap:40px;
         h1 {
             font-size: 40px;
         }
         img {
-            width: 75%;
+            width: 30vw;
             height: auto; 
         }
     }
@@ -82,8 +83,11 @@
         padding: 25px;
     }
     .section3accessories {
+        h2 {
+            padding: 10px;
+        }
         .card {
-           
+           width: auto;
         }
     }
 }
